@@ -5,16 +5,18 @@
 
 -Font Weight
 default - 400
+hero-primary - 700
 
 -Line Height
 default - 1
+hero-primary - 1.1
 
 --- 02 Color
 -Primary : #e67e22
 -Tint
 -Shades
 -Accent
--Gray : #555
+-Gray : #555 , #333
 
 --- 03 Shadow
 
@@ -41,13 +43,49 @@ body {
   color: #555;
   line-height: 1;
 }
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
 .hero {
   max-width: 130rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: rebeccapurple;
+  align-items: center;
+  gap: 9.6rem;
 }
 .img-hero {
   width: 100%;
+}
+.hero-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+.btn:link,
+.btn:visited {
+  font-size: 2rem;
+  text-decoration: none;
+
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+}
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
 }
